@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <style>
+    /* 1. Le decimos a toda la página que la barra flote */
+    html {
+      overflow-y: overlay;
+    }
+
+    /* 2. Al no poner ninguna clase antes, afectamos a la barra principal */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* 3. Carril totalmente invisible */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* 4. Pulgar (la barrita) color negro al 30% de opacidad */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    /* --- ESTO ES SOLO PARA PROBAR EL SCROLL --- */
+    body {
+      height: 200vh; /* Obliga a la página a ser el doble de alta que tu pantalla */
+      background: linear-gradient(to bottom, #e2e8f0, #64748b);
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scroll Principal Flotante</h1>
+  <p>Fíjate a la derecha. La barra ahora flota por encima del fondo degradado sin empujar este texto hacia la izquierda.</p>
+
+</body>
+</html>

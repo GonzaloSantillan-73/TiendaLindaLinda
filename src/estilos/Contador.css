@@ -1,0 +1,17 @@
+.contenedor-contador{
+  display: flex;
+  flex-direction: column;
+}
+
+.contador{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.botones-contador{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

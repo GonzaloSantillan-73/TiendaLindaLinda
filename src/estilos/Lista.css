@@ -1,0 +1,9 @@
+.contenedor {
+  max-width: 900px;
+  margin: 10px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px;
+  justify-content: center; /* centra el bloque de columnas */
+}
